@@ -1,7 +1,7 @@
 #
 # First, let us create some utility functions for Plotting
 #
-
+# This is an example of Data Science
 
 def pd_centers(featuresUsed, centers):
 	from itertools import cycle, islice
