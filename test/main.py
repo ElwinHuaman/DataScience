@@ -81,5 +81,29 @@ list[1] = 55
 # print(list)
 
 #### METHOD ZIP
-for x,y in zip(list, list3):
-    print(x," , ",y)
+# for x,y in zip(list, list3):
+#     print(x," , ",y)
+
+### the same reference to an object, PERMUTING
+# x = [10,20,30]
+# y = x       # y = list(x)  fi you want to copy a new list
+# x[1] = 42
+# print(y)
+
+### TUPLES are IMMUTABLE
+# tuple1 = ('Honda', 'CIvic', 4, 2017)
+# print(tuple1)
+
+### DICTIONARY
+dict1 = {('Ghostbusters', 2016): 5.4, ('Ghostbuster', 1993): 7.8} 
+dict1[('Fast and Fourios 5',2007)] = 4.5
+len_dict1 = len(dict1)
+# print(len_dict1)
+x = dict1.get(('Ghostbuster', 1993))
+print(x)
+print(('Ghostbuster', 1993) in dict1)
+dict1.pop(('Ghostbuster', 1993))
+print(dict1)
+
+for key, value in dict1.items():
+    print(key, ": ", value)
